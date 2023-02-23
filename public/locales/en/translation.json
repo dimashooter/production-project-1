@@ -14,5 +14,7 @@
   "Короткий язык": "En",
   "Войти": "Join",
   "userName": "username",
-  "password": "password"
+  "password": "password",
+  "форма авторизации": "Authorization form"
+  
 }
