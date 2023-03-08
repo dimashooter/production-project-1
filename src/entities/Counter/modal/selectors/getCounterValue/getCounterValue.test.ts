@@ -1,4 +1,3 @@
-import { DeepPartial } from '@reduxjs/toolkit';
 import { StateSchema } from 'app/StoreProvider';
 import { getCounterValue } from './getCounterValue';
 
@@ -8,6 +7,7 @@ describe('getCounterValue', () => {
             counter: {
                 value: 10,
             },
+            user:{authData:undefined}
         };
         expect(getCounterValue(state as StateSchema)).toEqual(10);
     });

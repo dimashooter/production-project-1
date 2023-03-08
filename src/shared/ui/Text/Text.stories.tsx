@@ -13,18 +13,16 @@ export default {
     },
 } as ComponentMeta<typeof Text>;
 
-const Template: ComponentStory<typeof Text> = (args) => <Text {...args} />;
+const Template: ComponentStory<typeof Text> = (args) => <Text />;
 
 export const TextField = Template.bind({});
 TextField.args = {
-    children: 'Text',
     text: 'Text example',
     title: 'Title example',
 };
 
 export const InvertedText = Template.bind({});
 InvertedText.args = {
-    children: 'Text',
     text: 'Text example',
     title: 'Title example',
 };

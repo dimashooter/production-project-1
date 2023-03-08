@@ -6,24 +6,24 @@
       "userId": 1
     },
     {
-      "id": 2,
+    "id": "1",
       "title": "json-server",
       "userId": 2
     }
   ],
   "comments": [
     {
-      "id": 1,
+      "id": "1",
       "body": "some comment",
       "postId": 1
     }
   ],
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "username": "admin",
       "password": "123"
     }
   ],
-  "profile": { "name": "typicode" }
+  "profile": { "fisrt": "Dima", "lastname":"Kranin", "age":26, "currency": "EUR","country":"Ukraine", "city":"Mariupol", "userName":"dimashooter","avatar":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fbeaus81%2Fcool-profile-pics-yall%2F&psig=AOvVaw1sc55_1xY3zy-7bwGti1pK&ust=1678294542319000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCODpz8ulyv0CFQAAAAAdAAAAABAE"   }
 }

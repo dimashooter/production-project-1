@@ -16,14 +16,14 @@ interface InputProps extends HTMLInputProps{
 export const Input = memo(({
     className, value, onChange, focus, type = 'text', ...rest
 }:InputProps) => {
-    const ref = useRef<HTMLInputElement>();
+    const ref = useRef<HTMLInputElement | null>(null);
 
     const onChangeHandler = (e:ChangeEvent<HTMLInputElement>) => {
         onChange?.(e.target.value);
     };
     useEffect(() => {
         if (focus) {
-            ref?.current.focus();
+            ref?.current?.focus();
         }
     }, [focus]);
     return (
