@@ -7,7 +7,6 @@ import { Text } from 'shared/ui/Text/Text';
 import { getProfileLoading } from '../modal/selector/getProfileData/getProfileData';
 import { getProfileData } from '../modal/selector/getProfileError/getProfileError';
 import { getProfileError } from '../modal/selector/getProfileLoading/getProfileLoading';
-import cls from './ProfileCard.module.scss';
 
 interface ProfileCardProps {
 className?: string
@@ -19,7 +18,7 @@ export const ProfileCard = ({ className }:ProfileCardProps) => {
     const { t } = useTranslation(['profile']);
     return (
 
-        <div className={classNames(cls.ProfileCard, {}, [className])}>
+        <div className={classNames({}, [className])}>
             <Text title={t('profile')} />
             <Button theme={ButtonTheme.OUTLINE}>{t('edit')}</Button>
         </div>

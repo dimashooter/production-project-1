@@ -7,7 +7,7 @@ describe('getCounterValue', () => {
             counter: {
                 value: 10,
             },
-            user:{authData:undefined}
+            user: { authData: undefined },
         };
         expect(getCounterValue(state as StateSchema)).toEqual(10);
     });
