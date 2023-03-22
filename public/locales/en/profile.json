@@ -1,4 +1,20 @@
 {
   "profile": "profile",
-  "edit": "edit"
+  "edit": "edit",
+  "name": "Your name",
+  "lastname": "Your lastname",
+  "cancel": "cancel",
+  "save": "save",
+  "country": "Your Country",
+  "city": "Your city",
+  "age": "Your age",
+  "avatar": "Your avatar",
+  "username": "Your username",
+  "age_error": "Incorrect age",
+  "server_error": "Server error",
+  "empty_data": "No data",
+  "incorrect_error": "Name and Surname required",
+  "country_error": "Country value isn't correct",
+  "username_error": "Add username",
+  "invalid_age": "Age is not valid"
 }

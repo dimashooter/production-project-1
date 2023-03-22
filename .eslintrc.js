@@ -56,10 +56,13 @@ module.exports = {
         'react-hooks/exhaustive-deps': 'error', // Checks effect dependencies
         'no-param-reassign': 'off',
         'no-undef': 'off',
+        'no-throw-literal': 0,
+        '@typescript-eslint/no-throw-literal': 0,
     },
     globals: {
         __IS_DEV__: true,
         __API__: true,
+        __PROJECT__: true,
     },
     overrides: [
         {

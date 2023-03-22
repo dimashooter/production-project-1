@@ -10,11 +10,15 @@
   "throw error": "throw error",
   "Главная": "Main",
   "О сайте": "About us",
+  "Профиль": "Profile",
+  "Статьи": "Articles",
   "Переключить": "Переключить",
   "Короткий язык": "En",
   "Войти": "Join",
   "userName": "username",
   "password": "password",
-  "форма авторизации": "Authorization form"
-  
+  "форма авторизации": "Authorization form",
+  "choose_currency": "Choose currency",
+  "choose_country": "Choose country",
+  "copied": "copied"
 }

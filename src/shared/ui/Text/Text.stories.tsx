@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
-import { Text } from './Text';
+import { Text, TextSize } from './Text';
 
 export default {
     title: 'shared/Text',
@@ -15,10 +15,17 @@ export default {
 
 const Template: ComponentStory<typeof Text> = (args) => <Text />;
 
-export const TextField = Template.bind({});
-TextField.args = {
+export const TextFieldM = Template.bind({});
+TextFieldM.args = {
     text: 'Text example',
     title: 'Title example',
+    size: TextSize.M,
+};
+export const TextFieldL = Template.bind({});
+TextFieldL.args = {
+    text: 'Text example',
+    title: 'Title example',
+    size: TextSize.L,
 };
 
 export const InvertedText = Template.bind({});

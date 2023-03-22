@@ -18,6 +18,7 @@ export default ({ config }: {config: webpack.Configuration}) => {
     config!.resolve!.extensions!.push('.ts', '.tsx');
 
     // eslint-disable-next-line no-param-reassign
+    // @ts-ignore
     config.module!.rules = config!.module!.rules!.map((rule: RuleSetRule) => {
         if (/svg/.test(rule.test as string)) {
             return { ...rule, exclude: /\.svg$/i };
@@ -34,6 +35,7 @@ export default ({ config }: {config: webpack.Configuration}) => {
     config.plugins!.push(new DefinePlugin({
         __IS_DEV__: JSON.stringify(true),
         __API__: JSON.stringify(''),
+        __PROJECT__: JSON.stringify('storybook'),
     }));
     config.resolve!.modules = [
         path.resolve(__dirname, '../../src'),

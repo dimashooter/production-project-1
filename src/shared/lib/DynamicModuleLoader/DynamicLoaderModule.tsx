@@ -24,7 +24,6 @@ const DynamicLoaderModule = ({
             store.reducerManager.add(name as StateSchemaKey, reducer);
             dispatch({ type: `@INIT ${name} reducer` });
         });
-
         return () => {
             if (removeAfterUnmounte) {
                 // eslint-disable-next-line @typescript-eslint/no-unused-vars
